@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Core
 
----
-
 ## Description of the **Core** Directory in **Shared**
 
 The **Core** directory in the **Shared** folder contains fundamental React components and providers that are reused across various parts of the extension, such as **Popup**, **Sidebar**, or other visual components. These are foundational blocks that provide essential functionality for the user interface and offer key services, such as theme management, localization, user agreements, configuration, and analytics.

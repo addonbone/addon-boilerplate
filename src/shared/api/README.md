@@ -1,11 +1,8 @@
 # Addon Boilerplate / Shared / API
 
----
-
 ## Description of the **API** Directory
 
 The **API** directory is designed to store all functions that interact with browser APIs, such as the **Chrome API**, **Firefox API**, as well as external APIs if necessary. A key aspect of working with browser APIs is that all interactions are wrapped in **Promise** to standardize asynchronous task handling and ensure compatibility across different browsers.
-
 
 ## Structure and Purpose
 

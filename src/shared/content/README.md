@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Content
 
----
-
 ## Description of the **Content** Directory
 
 The **Content** directory in the **Shared** folder contains the content scripts that run directly on the web pages that

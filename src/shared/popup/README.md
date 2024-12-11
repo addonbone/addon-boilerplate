@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Popup
 
----
-
 ## Full Description of the **Popup** Directory
 
 The **Popup** directory in the project is responsible for implementing the user interface of the extension's popup window, which appears when interacting with the extension's icon in the browser. It serves as the main interface through which the user interacts with the extension's functionality. The **Popup** uses React components, state and data management providers, as well as styles specific to this interface.

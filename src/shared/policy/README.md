@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Policy
 
----
-
 ## Full Description of the **Policy** Directory in **Shared** (with structure similar to **Popup**)
 
 The **Policy** directory in **Shared** is designed for displaying user agreements, privacy policies, and terms of

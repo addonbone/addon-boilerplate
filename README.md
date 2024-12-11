@@ -3,7 +3,6 @@
 # Addon Boilerplate
 Addon Boilerplate - TypeScript, React, and Sass for Chrome, Firefox, Edge, Opera, Safari, and Brave.
 
-
 ## General Overview of Addon Boilerplate
 
 This Boilerplate is designed to streamline the development of browser extensions for multiple browsers using a unified codebase. Its key capability is enabling the creation of multiple, nearly identical extensions (e.g., two, three, or even ten) from the same foundation, with differences confined to styling, icons, logos, or additional UI components.

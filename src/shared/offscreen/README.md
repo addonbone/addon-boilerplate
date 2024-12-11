@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Offscreen
 
----
-
 ## Description of the **Offscreen** Directory
 
 The **Offscreen** directory in the **Shared** folder is responsible for handling the logic of **offscreen** scripts. **Offscreen** mode is a special feature used in browser extensions to perform tasks outside of the visible area of a web

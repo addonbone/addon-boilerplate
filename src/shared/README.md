@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared
 
----
-
 ## Description of the **Shared** Directory
 
 The **Shared** directory in the project is a key architectural element that contains common modules used across all extensions. 

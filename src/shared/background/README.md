@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Background
 
----
-
 ## Description of the **Background** Directory
 
 The **Background** directory in the **Shared** folder contains the logic for the background script, which handles

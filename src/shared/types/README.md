@@ -1,7 +1,5 @@
 # Addon Boilerplate / Shared / Types
 
----
-
 ## Full Description of the **Types** Directory in **Shared**
 
 The **Types** directory in **Shared** is where you will store all the **TypeScript** types and interfaces needed for your extension. **Types** play a crucial role in the architecture by helping you strictly type the data and interactions between different parts of your application. This improves autocomplete, ensures type safety, and helps prevent errors.

@@ -1,7 +1,5 @@
 # Addon Boilerplate / Apps
 
----
-
 ## Full Description of the **Apps** Directory
 
 The **Apps** directory is the core part of your project, where all the browser extensions you develop are located. Unlike **Shared**, which contains components and modules shared across all extensions, **Apps** holds separate directories for each of your extensions. This structure allows you to create multiple different extensions using the same codebase with minimal changes to configurations, styles, and interfaces.
