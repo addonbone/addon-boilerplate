@@ -1,3 +1,5 @@
+<img src="github.png" alt="Addon Boilerplate">
+
 # Addon Boilerplate
 
 Addon Boilerplate - TypeScript, React, and Sass for Chrome, Firefox, Edge, Opera, Safari, and Brave.
