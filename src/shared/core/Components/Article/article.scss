@@ -1,0 +1,20 @@
+.article {
+  display: block;
+
+  &--classic {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &--small {
+    font-size: 12px;
+    color: #687C93;
+    line-height: 16px;
+  }
+
+  &--big {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

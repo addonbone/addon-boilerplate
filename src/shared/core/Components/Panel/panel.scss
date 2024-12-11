@@ -1,0 +1,16 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(var(--screen-height) - var(--topline-heigth) - var(--bottomline-height));
+  box-sizing: border-box;
+
+  [mode=responsive] & {
+    height: calc(100vh - var(--topline-heigth) - var(--bottomline-height));
+  }
+
+  &--center {
+    align-items: center;
+    justify-content: center;
+  }
+}

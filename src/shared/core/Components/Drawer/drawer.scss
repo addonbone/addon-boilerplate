@@ -1,0 +1,52 @@
+$root: drawer;
+
+.#{$root} {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 0;
+    left: 0;
+    will-change: background;
+    transition: background var(--transition-speed3);
+  }
+
+  &--visible {
+    &:before {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__content {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: var(--drawer-height);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: var(--drawer-border-radius);
+    transform: translate3d(0, 100%, 0);
+    transition: transform var(--transition-speed3) cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+
+    [mode=responsive] & {
+      height: var(--drawer-responsive-height);
+    }
+
+    .#{$root}--visible & {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

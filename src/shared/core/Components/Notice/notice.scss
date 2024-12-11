@@ -1,0 +1,31 @@
+$root: notice;
+
+.#{$root} {
+  padding: 0 var(--side-padding);
+
+  &-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 18px 0 8px;
+    font-family: var(--notice-totle-font-family, var(--title-font-family));
+    text-align: center;
+
+    .#{$root}--warning & {
+      color: var(--notice-warning-text-color, #D32A2A);
+    }
+  }
+
+  &-description {
+    font-weight: 400;
+    font-size: 17px;
+    max-width: 320px;
+    text-align: center;
+    line-height: 25px;
+    word-break: break-word;
+  }
+
+  &-action {
+    padding-top: 15px;
+    text-align: center;
+  }
+}

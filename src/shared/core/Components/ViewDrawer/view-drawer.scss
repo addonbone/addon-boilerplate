@@ -1,0 +1,5 @@
+.view-drawer {
+  &__body {
+    height: calc(var(--screen-height) - (var(--topline-heigth) * 1.5));
+  }
+}

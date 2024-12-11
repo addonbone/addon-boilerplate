@@ -1,0 +1,33 @@
+.list-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  padding: 0 var(--side-padding);
+  height: 70px;
+
+  &__center {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__primary, &__secondary {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__left, &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right {
+    [dir=ltr] & {
+      margin-left: auto;
+    }
+  }
+}

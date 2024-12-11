@@ -1,0 +1,22 @@
+.section {
+  position: relative;
+
+  @media (max-width: 780px) {
+    & {
+      margin-left: var(--side-padding);
+      margin-right: var(--side-padding);
+    }
+  }
+
+  &--full-margin {
+    margin: var(--side-padding);
+  }
+
+  &--side-margin {
+    margin: 0 var(--side-padding);
+  }
+
+  &--bottom-margin {
+    margin-bottom: var(--side-padding);
+  }
+}

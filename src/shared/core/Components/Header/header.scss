@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &-title, &-subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-title {
+    font-family: var(--header-title-font-family, var(--title-font-family));
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--header-title-text-color, var(--title-text-color));
+    will-change: color;
+    transition: color var(--transition-speed);
+  }
+
+  &-subtitle {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--secondary-text-color);
+  }
+
+  &-children {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: var(--side-padding);
+
+    [dir=rtl] & {
+      margin-left: 0;
+      margin-right: var(--side-padding);
+    }
+  }
+}

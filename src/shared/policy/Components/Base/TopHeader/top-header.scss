@@ -1,0 +1,21 @@
+.top-header {
+  text-align: center;
+  padding: 50px 0 20px;
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--policy-top-header-title-text-color, var(--title-text-color));
+    font-family: var(--policy-top-header-title-font-family, var(--title-font-family));
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+
+    &:before {
+      content: '';
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}

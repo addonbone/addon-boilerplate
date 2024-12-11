@@ -1,0 +1,17 @@
+.icon-button {
+  &--sun {
+    background-image: url("icons/sun.svg");
+  }
+
+  &--moon {
+    background-image: url("icons/moon.svg");
+  }
+
+  &--help {
+    background-image: url("icons/help.svg");
+  }
+
+  &--rate {
+    background-image: url("icons/rate.svg");
+  }
+}

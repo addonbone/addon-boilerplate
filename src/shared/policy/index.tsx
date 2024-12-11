@@ -1,0 +1,1 @@
+export {default, PolicyProps} from "./Policy";

@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "rootDir": "src",
+    "outDir": "./dist",
+    "noEmitOnError": false,
+    "noEmit": false,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@api/*": ["shared/api/*"],
+      "@utils/*": ["shared/utils/*"],
+      "@hooks/*": ["shared/core/hooks/*"],
+      "@components/*": ["shared/core/Components/*"],
+      "@analytics": ["shared/core/Analytics"],
+      "@agreement": ["shared/core/Agreement"],
+      "@locale": ["shared/core/Locale"],
+      "@config": ["shared/core/Config"],
+      "@theme": ["shared/core/Theme"],
+      "@services/*": ["shared/services/*"],
+      "@configuration/*": ["shared/config/*"],
+      "@background": ["shared/background"],
+      "@content": ["shared/content"],
+      "@popup": ["shared/popup"],
+      "@policy": ["shared/policy"],
+      "@offscreen": ["shared/offscreen"],
+      "@typings/*": ["shared/types/*"]
+    }
+  },
+  "include": [
+    "./declaration.d.ts",
+    "./src/**/*"
+  ]
+}

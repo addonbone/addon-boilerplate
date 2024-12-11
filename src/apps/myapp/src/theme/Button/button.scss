@@ -1,0 +1,39 @@
+$root: button;
+
+.#{$root} {
+
+  // Colors
+  &--contained {
+    &.#{$root}--primary-color {
+      background: var(--primary-color);
+    }
+  }
+
+  &--outlined {
+    &:hover {
+      background-color: #FCFCFC;
+
+      [theme=dark] & {
+        background-color: #2B2C36;
+      }
+    }
+
+    &:active {
+      background-color: #F9F9F9;
+
+      [theme=dark] & {
+        background-color: #24252D;
+      }
+    }
+  }
+
+  // Icons
+
+  &--reload-icon:before {
+    background-image: url("icons/reload.svg");
+  }
+
+  &--heart-icon:before {
+    background-image: url("icons/heart.svg");
+  }
+}

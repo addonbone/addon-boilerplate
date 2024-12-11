@@ -1,0 +1,68 @@
+$root: tooltip;
+
+.#{$root} {
+  position: absolute;
+  z-index: 9999;
+  display: block;
+  background-color: var(--tooltip-bg-color);
+  border-radius: 10px;
+  color: var(--tooltip-text-color, inherit);
+  box-shadow: var(--tooltip-box-shadow, 0 0 7px rgba(167, 167, 167, 0.2));
+  border: 1px solid var(--tooltip-border-color);
+  will-change: opacity;
+  transition: opacity ease-out;
+  font-size: var(--tooltip-font-size, 13px);
+  line-height: var(--tooltip-line-height, 17px);
+  box-sizing: border-box;
+  padding: var(--tooltip-padding, 9px 14px);
+  opacity: 0;
+  max-width: 400px;
+
+  [theme=dark] & {
+    box-shadow: none;
+  }
+
+  &--visible {
+    opacity: 1;
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    bottom: 0;
+    user-select: none;
+    pointer-events: none;
+
+    .#{$root}--bottom & {
+      transform: rotate(180deg);
+      bottom: auto;
+      top: 0;
+    }
+
+    &:after, &:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: var(--tooltip-bg-color);
+      border-width: 10px;
+      margin-left: -10px;
+    }
+
+    &:before {
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: var(--tooltip-arrow-border-color);
+      border-width: 11px;
+      margin-left: -11px;
+    }
+  }
+}

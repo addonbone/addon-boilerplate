@@ -1,0 +1,16 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  will-change: opacity;
+  transition: opacity ease-out;
+  background-color: var(--bg-color);
+
+  &--visible {
+    opacity: 1;
+  }
+}
