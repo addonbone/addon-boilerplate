@@ -1,0 +1,98 @@
+$root: icon-button;
+
+.#{$root} {
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  will-change: background, transform;
+  transition: background-image var(--transition-speed), background-color var(--transition-speed2), transform var(--transition-speed);
+  width: 18px;
+  height: 18px;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &--small-size {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--medium-size {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--large-size {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+  }
+
+  &--x-large-size {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  &--large-size, &--x-large-size {
+    &:not(:disabled):hover {
+      background-color: rgba(144, 170, 185, 0.11);
+    }
+  }
+
+  &--close,
+  &--close-accent,
+  &--sun,
+  &--moon,
+  &--help,
+  &--rate {
+    background-position: center;
+  }
+
+  // Margin
+  &--left-margin {
+    margin-left: calc(var(--side-padding) / 2);
+
+    [dir=rtl] & {
+      margin-left: 0;
+      margin-right: calc(var(--side-padding) / 2);
+    }
+  }
+
+  &--right-margin {
+    margin-right: calc(var(--side-padding) / 2);
+
+    [dir=rtl] & {
+      margin-right: 0;
+      margin-left: calc(var(--side-padding) / 2);
+    }
+  }
+
+  &--right-medium-margin {
+    margin-right: var(--icon-button-right-medium-margin, 16px);
+
+    [dir=rtl] & {
+      margin-right: 0;
+      margin-left: var(--icon-button-right-medium-margin, 16px);
+    }
+  }
+
+  &--left-small-margin {
+    margin-left: var(--icon-button-right-small-margin, 5px);
+
+    [dir=rtl] & {
+      margin-left: 0;
+      margin-right: var(--icon-button-right-small-margin, 5px);
+    }
+  }
+}

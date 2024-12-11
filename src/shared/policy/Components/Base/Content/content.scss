@@ -1,0 +1,16 @@
+.content {
+  display: block;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  &-title {
+    font-size: 20px;
+    color: var(--title-text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &-paragraph {
+    margin-top: 20px;
+  }
+}

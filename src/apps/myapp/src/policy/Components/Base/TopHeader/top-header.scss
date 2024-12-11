@@ -1,0 +1,13 @@
+.top-header {
+  &-title {
+    flex-direction: column;
+
+    &:before {
+      width: 56px;
+      height: 56px;
+      margin-bottom: 10px;
+      background-size: 56px;
+      background-image: url("images/logo.png");
+    }
+  }
+}

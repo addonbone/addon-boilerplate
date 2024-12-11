@@ -1,0 +1,31 @@
+:root {
+  --screen-width: 525px;
+  --screen-height: 600px;
+
+  --topline-heigth: 0px;
+  --topline-side-padding: 37px;
+  --topline-bottom-padding: 0px;
+
+  --bottomline-height: 0px;
+
+  --policy-layout-width: 800px;
+  --player-layout-width: 710px;
+
+  --transition-speed: 200ms;
+  --transition-speed2: 250ms;
+  --transition-speed3: 500ms;
+
+  --side-padding: 20px;
+  --side-padding2: 12px;
+
+  --tag-chip-border-radius: 5px;
+  --tag-chip-padding: 3px 6px;
+  --tag-bold-font-weight: 800;
+
+  --higthlight-color: #FFE792;
+  --higthlight-delta: 4px;
+
+  --drawer-height: calc(var(--screen-height) - (var(--topline-heigth) / 2));
+  --drawer-responsive-height: calc(100vh - (var(--topline-heigth) / 2));
+  --drawer-border-radius: 20px 20px 0 0;
+}

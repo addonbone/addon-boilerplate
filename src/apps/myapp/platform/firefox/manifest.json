@@ -1,0 +1,61 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_app_name__",
+  "description": "__MSG_app_description__",
+  "short_name": "__MSG_app_short_name__",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "author": "Hype Extensions",
+  "homepage_url": "https://google.com",
+  "icons": {
+    "32": "/img/logo/32.png",
+    "64": "/img/logo/64.png",
+    "128": "/img/logo/128.png",
+    "256": "/img/logo/256.png",
+    "512": "/img/logo/512.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "/img/icon/16.png",
+      "24": "/img/icon/24.png",
+      "32": "/img/icon/32.png",
+      "64": "/img/icon/64.png",
+      "128": "/img/icon/128.png",
+      "256": "/img/icon/256.png",
+      "512": "/img/icon/512.png"
+    },
+    "default_title": "__MSG_app_title__",
+    "default_popup": "html/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "downloads",
+    "unlimitedStorage",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "img/icons/*"
+  ]
+}

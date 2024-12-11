@@ -1,0 +1,16 @@
+.stamp {
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  will-change: background;
+  transition: background var(--transition-speed);
+
+  &--medium-size {
+    width: 60px;
+    height: 60px;
+  }
+
+  &--logo, &--loading {
+    background-position: center;
+  }
+}

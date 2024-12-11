@@ -1,0 +1,192 @@
+$root: button;
+
+@mixin mq-button-compact() {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+.#{$root} {
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--button-font-weight, 500);
+  font-size: var(--button-font-size, 14px);
+  letter-spacing: var(--button-letter-spacing, 0.5px);
+  line-height: var(--button-line-height, 14px);
+  height: 34px;
+  will-change: background, color, transform;
+  transition: background var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &--compact, &--compact-without-icon {
+    @include mq-button-compact {
+      padding: 0 !important;
+      width: 46px;
+    }
+  }
+
+  &--contained, &--outlined {
+    border-radius: var(--button-border-radius, 17px);
+    padding: var(--button-padding, 0 16px);
+  }
+
+  &--outlined, &--text {
+    color: var(--text-color);
+    background: none;
+  }
+
+  &--text {
+    padding: 0 20px;
+
+    &:hover {
+      color: var(--text-color2);
+    }
+  }
+
+  &--contained {
+    color: #FFFFFF;
+
+    &.#{$root}--accent-color, &.#{$root}--primary-color {
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity var(--transition-speed);
+      }
+
+      &:hover:after {
+        opacity: 1;
+      }
+    }
+
+    &.#{$root}--fog-color {
+      background-color: var(--secondary-text-color);
+      transition: background-color var(--transition-speed);
+    }
+  }
+
+  &--outlined {
+    border: 1px solid var(--secondary-text-color);
+    font-weight: 700;
+    background-color: transparent;
+  }
+
+  &--text {
+    margin: 0;
+
+    &.#{$root}--primary-color {
+      color: var(--accent-text-color);
+    }
+
+    &.#{$root}--secondary-color {
+      color: var(--secondary-text-color);
+    }
+  }
+
+  // Sizes
+  &--medium-size {
+    font-size: 14px;
+  }
+
+  &--large-size {
+    height: 54px;
+    min-width: 95px;
+    font-size: 16px;
+  }
+
+  // Margin
+  &--top-medium-margin {
+    margin-top: var(--side-padding);
+  }
+
+  &--bottom-medium-margin {
+    margin-bottom: var(--side-padding);
+  }
+
+  &--right-medium-margin {
+    margin-right: var(--side-padding);
+
+    [dir=rtl] & {
+      margin-right: 0;
+      margin-left: var(--side-padding);
+    }
+  }
+
+  // Icons
+  &--reload-icon, &--heart-icon {
+    &:before {
+      position: relative;
+      display: inline-flex;
+      width: 18px;
+      height: 18px;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: var(--button-icon-side-padding, 6px);
+      z-index: 2;
+      will-change: background;
+      transition: background var(--transition-speed);
+
+      [dir=rtl] & {
+        margin-right: 0;
+        margin-left: var(--button-icon-side-padding, 6px);
+      }
+    }
+
+    &:not(.#{$root}--compact-without-icon) {
+      padding-left: var(--button-with-icon-side-padding, 16px);
+
+      [dir=rtl] & {
+        padding-left: var(--side-padding);
+        padding-right: var(--button-with-icon-side-padding, 16px);
+      }
+    }
+
+    &.#{$root}--compact-without-icon {
+      &:before {
+        display: none;
+      }
+    }
+
+    &.#{$root}--compact, &.#{$root}--compact-without-icon {
+      &:before {
+        @include mq-button-compact {
+          margin: 0;
+          display: inline-flex;
+        }
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 3;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: var(--button-max-width, 160px);
+    line-height: initial;
+
+    .#{$root}--compact &, .#{$root}--compact-without-icon & {
+      @include mq-button-compact {
+        display: none;
+      }
+    }
+  }
+}

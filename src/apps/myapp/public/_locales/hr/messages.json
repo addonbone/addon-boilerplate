@@ -1,0 +1,50 @@
+{
+  "app_name": {
+    "message": "Addon Boilerplate"
+  },
+  "app_short_name": {
+    "message": "Web Ext"
+  },
+  "app_description": {
+    "message": "Addon Boilerplate - Boilerplate for creating a Addon Boilerplate"
+  },
+  "app_title": {
+    "message": "Addon Boilerplate"
+  },
+  "loading_title": {
+    "message": "Loading..."
+  },
+  "loading_description": {
+    "message": "Give me a second, I'm trying to find data"
+  },
+  "reload_page": {
+    "message": "Reload page"
+  },
+  "accept": {
+    "message": "I accept"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "donate": {
+    "message": "Support us"
+  },
+  "rate_us": {
+    "message": "Rate us"
+  },
+  "change_theme": {
+    "message": "Change the theme"
+  },
+  "info": {
+    "message": "Our blog"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
+  },
+  "read_more": {
+    "message": "Read more"
+  },
+  "remove": {
+    "message": "Remove"
+  }
+}

@@ -1,0 +1,41 @@
+.message {
+  background-color: var(--message-bg-color);
+  color: var(--message-text-color);
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  will-change: background-color, color;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+
+  &--standalone {
+    border-radius: 10px;
+    padding: var(--side-padding2) var(--side-padding);
+  }
+
+  &--inline {
+    padding: var(--side-padding) var(--side-padding);
+  }
+
+  &--closeable {
+    position: relative;
+    padding-right: 35px;
+
+    [dir=rtl] & {
+      padding-right: var(--side-padding);
+      padding-left: 35px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    [dir=rtl] & {
+      right: auto;
+      left: 10px;
+    }
+  }
+}

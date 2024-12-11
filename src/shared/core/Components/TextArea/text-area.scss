@@ -1,0 +1,15 @@
+.text-area {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 38px;
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  padding: calc(var(--side-padding) / 2) var(--side-padding2);
+  border: 1px solid var(--text-field-border-color);
+  border-radius: var(--text-field-border-radius);
+  background-color: var(--text-field-bg-color);
+}
